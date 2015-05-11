@@ -11,6 +11,12 @@
 <body ng-app="openhouse">
 	<div ng-controller="FeedController as feed">
 		<h1>{{ feed.headline }}</h1>
+		<div ng-repeat="item in feed.feed">
+			<div class="oh-avatar" style="background: transparent url('{{item.user.avatarUrl}}') no-repeat">
+				<strong>{{ item.user.displayName }}</strong>
+			</div>
+			<strong>{{ item.message }}</strong>
+		</div>
 	</div>
 </body>
 </html>
