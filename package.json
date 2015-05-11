@@ -1,0 +1,19 @@
+{
+  "name": "swoh2015",
+  "version": "1.0.0",
+  "description": "SolarWinds Open House 2015 - Using AngularJS to replace ASP.NET User Controls",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pdamb/swoh2015.git"
+  },
+  "author": "Petr Damborsky",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pdamb/swoh2015/issues"
+  },
+  "homepage": "https://github.com/pdamb/swoh2015"
+}
