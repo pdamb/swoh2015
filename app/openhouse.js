@@ -1,3 +1,5 @@
+/// <reference path="../bower_components/angular/angular.js" />
+
 // Create Module
 var app = angular.module('openhouse', []);
 
@@ -8,5 +10,3 @@ app.controller('FeedController', FeedController);
 function FeedController(){
 	this.headline = 'Your daily feed';
 }
-
-
