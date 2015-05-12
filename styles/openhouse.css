@@ -115,6 +115,27 @@ strong {
   padding:20px;
 }
 
+.profile ul {
+  overflow:hidden;
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+.profile li {
+  display:block;
+  float:left;
+  padding:0;
+  background:#FFF;
+  margin:0 2px 2px 0;
+  width:20px;
+  height:20px;
+  overflow:hidden;
+  font-size:15px;
+  text-align:center;
+  font-weight:bold;
+}
+
 .profile .avatar img{
   display:block;
   margin:0 auto 20px auto;
