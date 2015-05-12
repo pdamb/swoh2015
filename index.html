@@ -6,28 +6,51 @@
   <link rel="stylesheet" href="styles/openhouse.css">
   <script src="bower_components/angular/angular.min.js"></script>
   <script src="app/openhouse.js"></script>
-  <script src="app/directives/avatar-directive.js"></script>
-  <script src="app/directives/profile-directive.js"></script>
-  <script src="app/directives/post-directive.js"></script>
 </head>
 <body ng-app="openhouse">
   <div class="wrapper" ng-controller="TicketsController as vm">
     <h1>TICKET SYSTEM</h1>
       <div class="main">
-        <h2>Tickets ({{filtered.length}})</h2>
-        <input class="search" type="text" ng-model="q" placeholder="filter">
-        <oh-post
-          ng-repeat="ticket in filtered = (vm.tickets | filter:q )" 
-          ng-click="vm.highlight(ticket)"
-          ng-class="{highlighted: vm.selectedTicket === ticket.number}"
-          ticket="ticket"
-          >
-        </oh-post>
-        <div ng-show="filtered.length == 0">No results. Sorry.</div>
+        <h2>Tickets (2)</h2>
+        <input class="search" type="text" placeholder="filter">
+        <div class="post">
+        	<div class="avatar">
+            <strong>John Doe</strong>
+            <img src="/images/avatars/dummy-200x200-TShirt-plain.jpg">
+          </div>
+        	<h3>My display won't show blue color.</h3>
+        	<p>Hello, my LCD display suddenly lost all the blue shades. Could you fix it? Now?</p>
+        </div>
+        <div class="post highlighted">
+          <div class="avatar">
+            <strong>John Doe</strong>
+            <img src="/images/avatars/dummy-200x200-TShirt-plain.jpg">
+          </div>
+        	<h3>YouTube is slow.</h3>
+        	<p>All the videos are lagging!</p>
+        </div>
       </div>
-      <div class="side" ng-show="vm.selectedUser !== null">
+      <div class="side">
         <h2>User details</h2>
-        <oh-profile user="vm.selectedUser"></oh-profile>
+        <div class="profile">
+          <div class="avatar big">
+            <strong>John Doe</strong>
+            <img src="/images/avatars/dummy-200x200-TShirt-plain.jpg">
+          </div>
+          <h3>Ticket history</h3>
+          <hr>
+          <ul>
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+          </ul>
+          <h3>Edit profile</h3>
+          <hr>
+          <strong>name:</strong><br/>
+          <input type="text" placeholder="username"><br/>
+          <strong>avatar:</strong><br/>
+          <input type="text" placeholder="url"><br/>
+        </div>
       </div>
     </div>
   </div>
