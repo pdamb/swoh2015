@@ -87,6 +87,20 @@ strong {
   margin:0 20px 0 0;
 }
 
+.post .avatar strong {
+  font-size:0.8em;
+}
+
+.post .avatar img {
+  height: 80px;
+  width: 80px;
+  overflow:hiden;
+  border-radius: 0;
+  border:none;
+  background: #3E92CC;
+  padding-left:20px;
+}
+
 .profile {
   background: #ffeb7c;
   overflow: hidden;
