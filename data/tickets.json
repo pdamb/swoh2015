@@ -1,28 +1,48 @@
 [
   {
     "number": 1,
-    "user": "pdamb",
+    "user": {
+      "name": "pdamb",
+      "displayName": "Petr Damborsky",
+      "avatarUrl": "/images/avatars/dummy-200x200-Wardrobe-plain.jpg"
+    },
     "title": "Broken mouse.",
     "message": "My mouse doesn't work."
   },{
     "number": 2,
-    "user": "charlie",
+    "user": {
+      "name": "charlie",
+      "displayName": "Charlie Chaplin",
+      "avatarUrl": "/images/avatars/dummy-200x200-CharlieChaplin-plain.jpg"
+    },
     "title": "Monitor won't show blue color.",
     "message": "Hello, my current monitor suddenly lost all the blue shades."
   },{
     "number": 3,
-    "user": "tee",
+    "user": {
+      "name": "tee",
+      "displayName": "Tee Shirt",
+      "avatarUrl": "/images/avatars/dummy-200x200-TShirt-plain.jpg"
+    },
     "title": "YouTube is slow.",
     "message": "All the videos are lagging!"
   },{
     "number": 4,
-    "user": "barbara",
+    "user": {
+      "name": "barbara",
+      "displayName": "Barbara Stanwyck",
+      "avatarUrl": "/images/avatars/dummy-200x200-BarbaraStanwyck-plain.jpg"
+    },
     "title": "Cannot access Outlook.",
     "message": "I can't open Outlook. Keeps showing weird messages."
   },{
     "number": 5,
-    "user": "charlie",
-    "title": "I nedd a new laptop.",
+    "user": {
+      "name": "pdamb",
+      "displayName": "Petr Damborsky",
+      "avatarUrl": "/images/avatars/dummy-200x200-Wardrobe-plain.jpg"
+    },
+    "title": "I need a new laptop.",
     "message": "The current one is too heavy."
   }
 ]

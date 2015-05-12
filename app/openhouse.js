@@ -46,6 +46,7 @@ function TicketsController($http){
       message: "HELP! I need a code review right now! Lorem ipsum dolor sit amet and some more radditodes ndsd snd sndsajdfn;lkjg anfdsklfj dfiorewn fkldf kjndfslnf dsifdj fdnfmsd."
     }
   ];
+  
   this.highlight = function(ticket){
     this.selectedTicket = ticket.number;
     this.selectedUser = ticket.user;
