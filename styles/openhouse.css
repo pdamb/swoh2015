@@ -29,8 +29,19 @@ h2 {
   font-size: 1.7em;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
   display:inline-block;
+}
+
+h3 {
+  color:#3E92CC;
+  font-size:1.5em;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+
+p {
+  margin: 0 0 10px 0;
 }
 
 strong {
@@ -52,12 +63,6 @@ strong {
   padding:20px;
   margin:0 20px 20px 0;
   overflow: hidden;
-}
-
-.post h3 {
-  color:#3E92CC;
-  font-size:1.5em;
-  font-weight: bold;
 }
 
 .post.highlighted {
