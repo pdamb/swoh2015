@@ -1,22 +1,22 @@
 [
-	{
-		"name": "pdamb",
-		"displayName": "Petr Damborsky",
-		"avatarUrl": "/images/avatars/dummy-200x200-Wardrobe-plain.jpg"
-	},
-	{
-		"name": "barbara",
-		"displayName": "Barbara Stanwyck",
-		"avatarUrl": "/images/avatars/dummy-200x200-BarbaraStanwyck-plain.jpg"
-	},
-	{
-		"name": "charlie",
-		"displayName": "Charlie Chaplin",
-		"avatarUrl": "/images/avatars/dummy-200x200-CharlieChaplin-plain.jpg"
-	},
-	{
-		"name": "tee",
-		"displayName": "Tee Shirt",
-		"avatarUrl": "/images/avatars/dummy-200x200-TShirt-plain.jpg"
-	}
+  {
+    "name": "pdamb",
+    "displayName": "Petr Damborsky",
+    "avatarUrl": "/images/avatars/dummy-200x200-Wardrobe-plain.jpg"
+  },
+  {
+    "name": "barbara",
+    "displayName": "Barbara Stanwyck",
+    "avatarUrl": "/images/avatars/dummy-200x200-BarbaraStanwyck-plain.jpg"
+  },
+  {
+    "name": "charlie",
+    "displayName": "Charlie Chaplin",
+    "avatarUrl": "/images/avatars/dummy-200x200-CharlieChaplin-plain.jpg"
+  },
+  {
+    "name": "tee",
+    "displayName": "Tee Shirt",
+    "avatarUrl": "/images/avatars/dummy-200x200-TShirt-plain.jpg"
+  }
 ]

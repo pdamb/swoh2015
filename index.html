@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Open House Demo</title>
-	<link rel="stylesheet" href="styles/reset.css">
-	<link rel="stylesheet" href="styles/openhouse.css">
-	<script src="bower_components/angular/angular.min.js"></script>
-	<script src="app/openhouse.js"></script>
+  <meta charset="UTF-8">
+  <title>Open House Demo</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/openhouse.css">
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="app/openhouse.js"></script>
 </head>
 <body ng-app="openhouse">
-	<div ng-controller="FeedController as feed">
-		<h1>{{ feed.headline }}</h1>
-		<div ng-repeat="item in feed.feed">
-			<div class="oh-avatar" style="background: transparent url('{{item.user.avatarUrl}}') no-repeat">
-				<strong>{{ item.user.displayName }}</strong>
-			</div>
-			<strong>{{ item.message }}</strong>
-		</div>
-	</div>
+  <div ng-controller="FeedController as feed">
+    <h1>{{ feed.headline }}</h1>
+    <div ng-repeat="item in feed.feed">
+      <div class="oh-avatar" style="background: transparent url('{{item.user.avatarUrl}}') no-repeat">
+        <strong>{{ item.user.displayName }}</strong>
+      </div>
+      <strong>{{ item.message }}</strong>
+    </div>
+  </div>
 </body>
 </html>
