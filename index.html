@@ -9,13 +9,19 @@
   <script src="app/openhouse.js"></script>
 </head>
 <body ng-app="openhouse">
-  <div ng-controller="FeedController as feed">
-    <h1>{{ feed.headline }}</h1>
-    <div ng-repeat="item in feed.feed">
-      <div class="oh-avatar" style="background: transparent url('{{item.user.avatarUrl}}') no-repeat">
-        <strong>{{ item.user.displayName }}</strong>
+  <div class="wrapper" ng-controller="FeedController as feed">
+    <h1>SYSTEM X</h1>
+      <div class="main">
+        <h2>Active tickets</h2>
+        <div class="post" ng-repeat="item in feed.feed">
+          <img class="avatar" ng-src="{{ item.user.avatarUrl }}">
+          <h3>{{ item.user.displayName }}</h3>  
+          <p>{{ item.message }}</p>
+        </div>
       </div>
-      <strong>{{ item.message }}</strong>
+      <div class="side">
+        <h2>User details</h2>
+      </div>
     </div>
   </div>
 </body>

@@ -1,7 +1,15 @@
+/*
+ darkb: #2D2921;
+ yellow: #FFEB7C;
+ orange: #EB894E;
+ blue: #75B9BE;
+ lightblue: #A8CCC9;
+*/
+
 html {
-  background: white;
+  background: #F1F4F1;
   font-size: 20px;
-  font-family: 'Calibri', Verdana, Arial, sans-serif;
+  font-family: Calibri, Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -10,23 +18,52 @@ body {
 
 h1 {
   font-size: 2.5em;
-  color: #222;
+  color: #db4315;
   text-transform: uppercase;
   padding:0 0 20px 0;
   margin:0 0 20px 0;
   border-bottom:1px solid #CCC;
 }
 
-.oh-avatar {
-  width: 200px;
-  height: 200px;
+h2 {
+  font-size: 2em;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
 }
 
-.oh-avatar strong {
-  background: #444;
-  color:#FFF;
-  padding: 4px;
-  border-bottom:3px solid white;
-  box-shadow: 0 3px 0 orange;
-  display:block;
+.main {
+  float:left;
+  width:67%;
+}
+
+.side {
+  float:left;
+  width:33%;
+}
+
+.post {
+  background: white;
+  padding:20px;
+  margin:0 20px 20px 0;
+  overflow: hidden;
+  /*border-radius:90px;*/
+}
+
+.post .avatar {
+  width: 150px;
+  height: 150px;
+  border-radius:50%;
+  border: 2px solid #2d2921;
+  box-shadow: 0 3px 9px #999;
+  float:left;
+  padding:0;
+  margin:0 20px 0 0;
+}
+
+.post h3 {
+  color:#3E92CC;
+  font-size:1.5em;
+  font-weight: bold;
 }
