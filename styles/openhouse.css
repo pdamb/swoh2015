@@ -7,9 +7,9 @@
 */
 
 html {
-  background: #F1F4F1;
   font-size: 20px;
   font-family: Calibri, Helvetica, Arial, sans-serif;
+  background: white;
 }
 
 body {
@@ -48,6 +48,12 @@ strong {
   font-weight: bold;
 }
 
+.wrapper {
+  padding:20px;
+  background: #F1F4F1;
+  overflow:hidden;
+}
+
 .main {
   float:left;
   width:67%;
@@ -67,9 +73,6 @@ strong {
 
 .post.highlighted {
   background: #ffeb7c;
-}
-
-.avatar {
 }
 
 .avatar strong {
@@ -117,10 +120,13 @@ strong {
   margin:0 auto 20px auto;
 }
 
-.search {
-  float:right;
-  margin-right: 20px;
+input[type="text"] {
   height: 30px;
   padding:5px;
   font-size:20px;
+}
+
+.search {
+  float:right;
+  margin-right: 20px;
 }

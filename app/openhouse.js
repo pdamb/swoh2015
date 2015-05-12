@@ -20,7 +20,6 @@ function TicketsController($http){
   this.highlight = function(ticket){
     this.selectedTicket = ticket.number;
     this.selectedUser = ticket.user;
-    console.log(this.selectedTicket,this.selectedUser);
   };
   
   // private
