@@ -74,8 +74,8 @@ strong {
 }
 
 .avatar img {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius:50%;
   border: 2px solid #2d2921;
   box-shadow: 0 3px 9px #999;

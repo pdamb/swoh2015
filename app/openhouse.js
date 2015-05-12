@@ -9,7 +9,7 @@ app.controller('FeedController', FeedController);
 // Controller's Constructor Function
 function FeedController(){
   this.headline = 'Active tickets';
-  this.selectedUser = null
+  this.selectedUser = null;
   this.selectedTicket = 0;
   this.feed = [
     {
@@ -42,10 +42,10 @@ function FeedController(){
       title: "It's broken.",
       message: "HELP! I need a code review right now! Lorem ipsum dolor sit amet and some more radditodes ndsd snd sndsajdfn;lkjg anfdsklfj dfiorewn fkldf kjndfslnf dsifdj fdnfmsd."
     }
-  ]
+  ];
   this.highlight = function(ticket){
     this.selectedTicket = ticket.number;
     this.selectedUser = ticket.user;
     console.log(this.selectedTicket,this.selectedUser);
-  }
+  };
 }

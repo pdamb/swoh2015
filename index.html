@@ -11,9 +11,10 @@
 <body ng-app="openhouse">
   <div class="wrapper" ng-controller="FeedController as feed">
     <h1>SYSTEM X</h1>
+    <input type="text" ng-model="q">
       <div class="main">
-        <h2>Active tickets</h2>
-        <div class="post" ng-repeat="item in feed.feed" ng-click="feed.highlight(item)" ng-class="{highlighted: feed.selectedTicket === item.number}">
+        <h2>Active tickets ({{filtered.length}})</h2>
+        <div class="post" ng-repeat="item in filtered = (feed.feed | filter:q )" ng-click="feed.highlight(item)" ng-class="{highlighted: feed.selectedTicket === item.number}">
           <div class="avatar">
             <strong> {{ item.user.displayName }} </strong>
             <img ng-src="{{ item.user.avatarUrl }}">
