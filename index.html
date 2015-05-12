@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="styles/openhouse.css">
   <script src="bower_components/angular/angular.min.js"></script>
   <script src="app/openhouse.js"></script>
+  <script src="app/directives/avatar-directive.js"></script>
 </head>
 <body ng-app="openhouse">
   <div class="wrapper" ng-controller="TicketsController as vm">
@@ -14,10 +15,7 @@
         <h2>Tickets ({{filtered.length}})</h2>
         <input class="search" type="text" ng-model="q" placeholder="filter">
         <div class="post" ng-repeat="ticket in filtered = (vm.tickets | filter:q )" ng-click="vm.highlight(ticket)" ng-class="{highlighted: vm.selectedTicket === ticket.number}">
-          <div class="avatar">
-            <strong> {{ ticket.user.displayName }} </strong>
-            <img ng-src="{{ ticket.user.avatarUrl }}">
-          </div>
+          <oh-avatar user="ticket.user"></oh-avatar>
           <h3>{{ ticket.title }}</h3>
           <p>{{ ticket.message }}</p>
         </div>
@@ -26,10 +24,7 @@
       <div class="side" ng-show="vm.selectedUser !== null">
         <h2>User details</h2>
         <div class="profile">
-          <div class="avatar">
-            <strong> {{ vm.selectedUser.displayName }} </strong>
-            <img ng-src="{{ vm.selectedUser.avatarUrl }}">
-          </div>
+          <oh-avatar user="vm.selectedUser" size="big"></oh-avatar>
           <h3>Ticket history</h3>
           <hr>
           <ul>
