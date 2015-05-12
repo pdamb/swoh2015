@@ -8,6 +8,7 @@
   <script src="app/openhouse.js"></script>
   <script src="app/directives/avatar-directive.js"></script>
   <script src="app/directives/profile-directive.js"></script>
+  <script src="app/directives/post-directive.js"></script>
 </head>
 <body ng-app="openhouse">
   <div class="wrapper" ng-controller="TicketsController as vm">
@@ -15,11 +16,13 @@
       <div class="main">
         <h2>Tickets ({{filtered.length}})</h2>
         <input class="search" type="text" ng-model="q" placeholder="filter">
-        <div class="post" ng-repeat="ticket in filtered = (vm.tickets | filter:q )" ng-click="vm.highlight(ticket)" ng-class="{highlighted: vm.selectedTicket === ticket.number}">
-          <oh-avatar user="ticket.user"></oh-avatar>
-          <h3>{{ ticket.title }}</h3>
-          <p>{{ ticket.message }}</p>
-        </div>
+        <oh-post
+          ng-repeat="ticket in filtered = (vm.tickets | filter:q )" 
+          ng-click="vm.highlight(ticket)"
+          ng-class="{highlighted: vm.selectedTicket === ticket.number}"
+          ticket="ticket"
+          >
+        </oh-post>
         <div ng-show="filtered.length == 0">No results. Sorry.</div>
       </div>
       <div class="side" ng-show="vm.selectedUser !== null">
