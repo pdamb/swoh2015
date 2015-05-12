@@ -1,0 +1,28 @@
+[
+  {
+    "number": 1,
+    "user": "pdamb",
+    "title": "Broken mouse.",
+    "message": "My mouse doesn't work."
+  },{
+    "number": 2,
+    "user": "charlie",
+    "title": "Monitor won't show blue color.",
+    "message": "Hello, my current monitor suddenly lost all the blue shades."
+  },{
+    "number": 3,
+    "user": "tee",
+    "title": "YouTube is slow.",
+    "message": "All the videos are lagging!"
+  },{
+    "number": 4,
+    "user": "barbara",
+    "title": "Cannot access Outlook.",
+    "message": "I can't open Outlook. Keeps showing weird messages."
+  },{
+    "number": 5,
+    "user": "charlie",
+    "title": "I nedd a new laptop.",
+    "message": "The current one is too heavy."
+  }
+]

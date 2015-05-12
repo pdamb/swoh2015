@@ -4,14 +4,17 @@
 var app = angular.module('openhouse', []);
 
 // Create Controller in Module
-app.controller('FeedController', FeedController);
+app.controller('TicketsController', TicketsController);
 
 // Controller's Constructor Function
-function FeedController(){
-  this.headline = 'Active tickets';
-  this.selectedUser = null;
-  this.selectedTicket = 0;
-  this.feed = [
+function TicketsController($http){
+  
+  var vm = this;
+  
+  vm.headline = 'Active tickets';
+  vm.selectedUser = null;
+  vm.selectedTicket = 0;
+  vm.tickets = [
     {
       number: 1,
       user: {
@@ -48,4 +51,9 @@ function FeedController(){
     this.selectedUser = ticket.user;
     console.log(this.selectedTicket,this.selectedUser);
   };
+  
+  $http.get('/data/tickets.json').then(function(response){
+    console.log(response.data);
+    vm.tickets = response.data;
+  });
 }

@@ -9,12 +9,12 @@
   <script src="app/openhouse.js"></script>
 </head>
 <body ng-app="openhouse">
-  <div class="wrapper" ng-controller="FeedController as feed">
+  <div class="wrapper" ng-controller="TicketsController as vm">
     <h1>SYSTEM X</h1>
-    <input type="text" ng-model="q">
       <div class="main">
-        <h2>Active tickets ({{filtered.length}})</h2>
-        <div class="post" ng-repeat="item in filtered = (feed.feed | filter:q )" ng-click="feed.highlight(item)" ng-class="{highlighted: feed.selectedTicket === item.number}">
+        <h2>Current tickets ({{filtered.length}})</h2>
+        <input class="search" type="text" ng-model="q" placeholder="filter">
+        <div class="post" ng-repeat="item in filtered = (vm.tickets | filter:q )" ng-click="vm.highlight(item)" ng-class="{highlighted: vm.selectedTicket === item.number}">
           <div class="avatar">
             <strong> {{ item.user.displayName }} </strong>
             <img ng-src="{{ item.user.avatarUrl }}">
@@ -23,16 +23,16 @@
           <p>{{ item.message }}</p>
         </div>
       </div>
-      <div class="side" ng-show="feed.selectedUser !== null">
+      <div class="side" ng-show="vm.selectedUser !== null">
         <h2>User details</h2>
         <div class="profile">
           <div class="avatar">
-            <strong> {{ feed.selectedUser.displayName }} </strong>
-            <img ng-src="{{ feed.selectedUser.avatarUrl }}">
+            <strong> {{ vm.selectedUser.displayName }} </strong>
+            <img ng-src="{{ vm.selectedUser.avatarUrl }}">
           </div>
           <strong>User's ticket history</strong>
           <ul>
-            <li ng-repeat="char in feed.selectedUser.name"> - #{{ $index }} {{ char }}__{{ char | uppercase }}</li>
+            <li ng-repeat="char in vm.selectedUser.name"> - #{{ $index }} {{ char }}_ticket_{{ char | uppercase }}</li>
           </ul>
         </div>
       </div>

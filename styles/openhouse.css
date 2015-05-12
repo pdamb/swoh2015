@@ -26,11 +26,11 @@ h1 {
 }
 
 h2 {
-  font-size: 2em;
-  text-transform: lowercase;
-  font-variant: small-caps;
+  font-size: 1.7em;
+  text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 20px;
+  display:inline-block;
 }
 
 strong {
@@ -110,4 +110,12 @@ strong {
 .profile .avatar img{
   display:block;
   margin:0 auto 20px auto;
+}
+
+.search {
+  float:right;
+  margin-right: 20px;
+  height: 30px;
+  padding:5px;
+  font-size:20px;
 }
