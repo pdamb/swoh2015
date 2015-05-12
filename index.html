@@ -13,14 +13,27 @@
     <h1>SYSTEM X</h1>
       <div class="main">
         <h2>Active tickets</h2>
-        <div class="post" ng-repeat="item in feed.feed">
-          <img class="avatar" ng-src="{{ item.user.avatarUrl }}">
-          <h3>{{ item.user.displayName }}</h3>  
+        <div class="post" ng-repeat="item in feed.feed" ng-click="feed.highlight(item)" ng-class="{highlighted: feed.selectedTicket === item.number}">
+          <div class="avatar">
+            <strong> {{ item.user.displayName }} </strong>
+            <img ng-src="{{ item.user.avatarUrl }}">
+          </div>
+          <h3>{{ item.title }}</h3>  
           <p>{{ item.message }}</p>
         </div>
       </div>
-      <div class="side">
+      <div class="side" ng-show="feed.selectedUser !== null">
         <h2>User details</h2>
+        <div class="profile">
+          <div class="avatar">
+            <strong> {{ feed.selectedUser.displayName }} </strong>
+            <img ng-src="{{ feed.selectedUser.avatarUrl }}">
+          </div>
+          <strong>User's ticket history</strong>
+          <ul>
+            <li ng-repeat="char in feed.selectedUser.name"> - #{{ $index }} {{ char }}__{{ char | uppercase }}</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
